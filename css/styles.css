@@ -1,0 +1,81 @@
+body {
+    background-color: #eceff1;
+    margin-left: 350px;
+}
+
+.sidenav{
+    background-color: #eceff1;
+}
+
+.tabs .indicator {
+    background-color: #1976d2;
+}
+
+.tabs .tab a {
+    color: #1976d2;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #1976d2;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgba(178, 208, 246, 0.2);
+}
+
+a {
+    text-align: center;
+}
+
+span {
+    color: #1976d2;
+}
+
+span:hover {
+    color: #175da3;
+}
+
+#img-profile {
+    padding-bottom: 5vh;
+    width: 100%; 
+    height: 100%;
+}
+
+#about {
+    padding-top: 25vh;
+    height: 100vh;
+}
+
+#about p {
+    padding-bottom: 3vh;
+}
+
+#portfolio, #experience, #education, #skills, #awards {
+    padding-top: 5vh;
+    height: 100vh;
+}
+
+#about ul li a {
+    padding-right: 3vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #eceff1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #1976d2;
+border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #175da3;
+}
