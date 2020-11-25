@@ -7,7 +7,7 @@ body {
     background-color: #eceff1;
 }
 
-.sidenav{
+.sidenav {
     background-color: #eceff1;
 }
 
@@ -30,6 +30,28 @@ body {
 .material-icons{
     display: inline-flex;
     vertical-align: top;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color:  #1976d2 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid  #1976d2 !important;
+    box-shadow: 0 1px 0 0  #1976d2 !important;
+}
+
+/* label focus color */
+.input-field input[type=email]:focus + label {
+    color:  #1976d2 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid  #1976d2 !important;
+    box-shadow: 0 1px 0 0  #1976d2 !important;
 }
 
 a {
