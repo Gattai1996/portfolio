@@ -3,6 +3,7 @@
     <head>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
     <body>
@@ -14,61 +15,74 @@
                     </div>
                     <a><img id="img-profile" class="circle" src="img/bruno.jpg"></a>
                 </div>
-                <a href="#about" class="waves-effect"><span>About</span></a>
-                <a href="#portfolio" class="waves-effect"><span>Portfolio</span></a>
-                <a href="#experience" class="waves-effect"><span>Experience</span></a>
-                <a href="#education" class="waves-effect"><span>Education</span></a>
-                <a href="#skills" class="waves-effect"><span>Skills</span></a>
-                <a href="#awards" class="waves-effect"><span>Awards</span></a>
+                <a href="#about" class="flow-text waves-effect"><span>About</span></a>
+                <a href="#portfolio" class="flow-text waves-effect"><span>Portfolio</span></a>
+                <a href="#experience" class="flow-text waves-effect"><span>Experience</span></a>
+                <a href="#education" class="flow-text waves-effect"><span>Education</span></a>
+                <a href="#skills" class="flow-text waves-effect"><span>Skills</span></a>
+                <a href="#awards" class="flow-text waves-effect"><span>Awards</span></a>
             </li>
         </ul>
-        <div id="about">
-            <h1>Bruno da Costa Gattai</h1>
-            <p class="flow-text">I'm a brazilian Unity3D developer with +600 hours game development experience.</p>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/bruno-gattai/" target="blank"><img src="img/linkedin.png" alt="linkedin icon"></a>
-                    <a href="https://github.com/Gattai1996" target="blank"><img src="img/github.png" alt=""></a>
-                    <a href="https://nebula-games-studio.itch.io/" target="blank"><img src="img/gamepad.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCNNm-Ro-WG7MlXF7DIh9LaQ" target="blank"><img src="img/youtube.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
-        <div id="portfolio">
-            <div class="row">
-                <div class="col s12">
-                  <ul class="tabs">
-                    <li class="tab col s3"><a href="#2018">2018</a></li>
-                    <li class="tab col s3"><a href="#2019">2019</a></li>
-                    <li class="tab col s3"><a class="active" href="#2020">2020</a></li>
-                    <li class="tab col s3"><a href="#2021">2021</a></li>
-                  </ul>
-                </div>
-                <div id="2018" class="col s12">2018 projects</div>
-                <div id="2019" class="col s12">2019 projects</div>
-                <div id="2020" class="col s12">2020 projects</div>
-                <div id="2021" class="col s12">2021 projects</div>
-              </div>
-        </div>
-        <div id="experience">
-            <h1>Experience</h1>
-        </div>
-        <div id="education">
-            <h1>Education</h1>
-        </div>
-        <div id="skills">
-            <h1>Skills</h1>
-        </div>
-        <div id="awards">
-            <h1>Awards</h1>
-        </div>
+        <a href="#" data-target="slide-out" class="sidenav-trigger btn-large blue darken-2 hide-on-large-only"><i class="material-icons">menu</i></a>
+        
+        <div class="row container">
+            
+            <div class="col s12 l10 offset-l2">
 
+                <div id="about">
+                    <h1>Bruno da Costa Gattai</h1>
+                    <p class="flow-text">I'm a brazilian Unity3D developer with +600 hours game development experience.</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/bruno-gattai/" target="blank"><img src="img/linkedin.png" alt="linkedin icon"></a>
+                            <a href="https://github.com/Gattai1996" target="blank"><img src="img/github.png" alt=""></a>
+                            <a href="https://nebula-games-studio.itch.io/" target="blank"><img src="img/gamepad.png" alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCNNm-Ro-WG7MlXF7DIh9LaQ" target="blank"><img src="img/youtube.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="portfolio">
+                    <div class="row">
+                        <div class="col s12">
+                          <ul class="tabs">
+                            <li class="tab col s3"><a href="#2018">2018</a></li>
+                            <li class="tab col s3"><a href="#2019">2019</a></li>
+                            <li class="tab col s3"><a class="active" href="#2020">2020</a></li>
+                            <li class="tab col s3"><a href="#2021">2021</a></li>
+                          </ul>
+                        </div>
+                        <div id="2018" class="col s12">2018 projects</div>
+                        <div id="2019" class="col s12">2019 projects</div>
+                        <div id="2020" class="col s12">2020 projects</div>
+                        <div id="2021" class="col s12">2021 projects</div>
+                      </div>
+                </div>
+                <div id="experience">
+                    <h1>Experience</h1>
+                </div>
+                <div id="education">
+                    <h1>Education</h1>
+                </div>
+                <div id="skills">
+                    <h1>Skills</h1>
+                </div>
+                <div id="awards">
+                    <h1>Awards</h1>
+                </div>
+
+            </div>
+    
+        </div>
+        
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
+            });
+            $(document).ready(function(){
+                $('.btn').sidenav();
             });
             $(document).ready(function(){
                 $('.tabs').tabs();

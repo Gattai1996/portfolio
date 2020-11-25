@@ -1,6 +1,5 @@
 body {
     background-color: #eceff1;
-    margin-left: 350px;
 }
 
 .sidenav{
@@ -42,12 +41,12 @@ span:hover {
 }
 
 #about {
-    padding-top: 25vh;
+    padding-top: 15vh;
     height: 100vh;
 }
 
 #about p {
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
 }
 
 #portfolio, #experience, #education, #skills, #awards {
