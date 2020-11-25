@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #eceff1;
 }
@@ -34,23 +39,38 @@ span:hover {
     color: #175da3;
 }
 
+#img-background {
+    margin-bottom: -5vh;
+    width: 100%;
+}
+
 #img-profile {
-    padding-bottom: 5vh;
+    margin-bottom: 5vh;
     width: 100%; 
     height: 100%;
 }
 
 #about {
-    padding-top: 15vh;
+    position: relative;
     height: 100vh;
+}
+
+#texts {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #about p {
     padding-bottom: 2vh;
 }
 
-#portfolio, #experience, #education, #skills, #awards {
+#portfolio, #experience, #education, #skills, #contact {
     padding-top: 5vh;
+}
+
+#portfolio, #education, #skills, #contact {
     height: 100vh;
 }
 

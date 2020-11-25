@@ -10,7 +10,7 @@
         <ul id="slide-out" class="sidenav sidenav-fixed">
             <li>
                 <div class="user-view">
-                    <div class="background">
+                    <div id="img-background" class="background">
                         <img src="img/unity.jpg" alt="unity background image">
                     </div>
                     <a><img id="img-profile" class="circle" src="img/bruno.jpg"></a>
@@ -20,28 +20,32 @@
                 <a href="#experience" class="flow-text waves-effect"><span>Experience</span></a>
                 <a href="#education" class="flow-text waves-effect"><span>Education</span></a>
                 <a href="#skills" class="flow-text waves-effect"><span>Skills</span></a>
-                <a href="#awards" class="flow-text waves-effect"><span>Awards</span></a>
+                <a href="#contact" class="flow-text waves-effect"><span>Contact</span></a>
             </li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger btn-large blue darken-2 hide-on-large-only"><i class="material-icons">menu</i></a>
         
         <div class="row container">
             
-            <div class="col s12 l10 offset-l2">
+            <div class="col s12 l9 offset-l3">
 
                 <div id="about">
-                    <h1>Bruno da Costa Gattai</h1>
-                    <p class="flow-text">I'm a brazilian Unity3D developer with +600 hours game development experience.</p>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/bruno-gattai/" target="blank"><img src="img/linkedin.png" alt="linkedin icon"></a>
-                            <a href="https://github.com/Gattai1996" target="blank"><img src="img/github.png" alt=""></a>
-                            <a href="https://nebula-games-studio.itch.io/" target="blank"><img src="img/gamepad.png" alt=""></a>
-                            <a href="https://www.youtube.com/channel/UCNNm-Ro-WG7MlXF7DIh9LaQ" target="blank"><img src="img/youtube.png" alt=""></a>
-                        </li>
-                    </ul>
+                    <div id="texts">
+                        <h1>Bruno da Costa Gattai</h1>
+                        <p class="flow-text">I'm a Brazilian Unity3D developer with +600 hours game development experience.</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/bruno-gattai/" target="blank"><img src="img/linkedin.png" alt="linkedin icon"></a>
+                                <a href="https://github.com/Gattai1996" target="blank"><img src="img/github.png" alt=""></a>
+                                <a href="https://nebula-games-studio.itch.io/" target="blank"><img src="img/gamepad.png" alt=""></a>
+                                <a href="https://www.youtube.com/channel/UCNNm-Ro-WG7MlXF7DIh9LaQ" target="blank"><img src="img/youtube.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <div id="portfolio">
+                    <h1>Portfolio</h1>
                     <div class="row">
                         <div class="col s12">
                           <ul class="tabs">
@@ -59,6 +63,51 @@
                 </div>
                 <div id="experience">
                     <h1>Experience</h1>
+                    <section>
+                        <!-- COMPUWISE -->
+                        <h5>Compuwise Informatic</h2>  
+                        <p> Position: Information Technology Intern </p>
+                        <p> Period of employment: Set. 2019 - Jul. 2020 </p>
+                        <p> Duration: 11 months </p>
+                        <p> Location: Cotia - SP, Brazil </p>
+                        <h6> About: </h6>
+                        <p> This job was my entry point in the technology area. I was hired to work 6 hours / day, but I did a lot of overtime and acquired a lot of knowledge in several areas. </p>
+                        <h6> Main activities: </h6>
+                        <p> Assist and communicate with customers via phone, chat and email to resolve calls and problems. </p>
+                        <p> Database queries. </p>
+                        <p> Frontend development. </p>
+                    </section>
+                    <div class="divider"></div>
+                    <section>
+                        <!-- J. SERRANO -->
+                        <h5>Textile J. Serrano</h2>
+                        <p> Position: Loader </p>
+                        <p> Period of employment: May 2017 - Jun. 2018 </p>
+                        <p> Duration: 1 year 2 months </p>
+                        <p> Location: Vargem Grande Paulista - SP, Brazil </p>
+                        <p> Textile J. Serrano Ltda is a company that manufactures carpets, couch coverings and mattresses, bedspreads and other textile parts. </p>
+                        <h6> Main activities: </h6>
+                        <p> Organize stock of raw materials, such as thread rolls used in machines. </p>
+                        <p> Receiving and sending pallets to other sectors. </p>
+                        <p> Logistics of textile parts for finishing. </p>
+                        <p> Labeling of parts and pallets. </p>
+                        <p> Assistance in sector activities, such as operating machinery, organization and cleaning. </p>
+                    </section>
+                    <div class="divider"></div>
+                    <section>
+                        <!-- NEW SPACE -->
+                        <h5> New Space Group </h5>
+                        <p> Operations assistant </p>
+                        <p> Period of employment: May 2015 - May 2017 </p>
+                        <p> Duration: 2 years 1 month </p>
+                        <p> Location: São Paulo - SP, Brazil </p>
+                        <p> The New Space Group provides services to other companies in several segments. </p>
+                        <h6> Main activities: </h6>
+                        <p> Analyze, label, digitize and take care of the logistics of documents for periodic examinations of Bradesco bank employees. </p>
+                        <p> Complete documentation and Excel spreadsheets for shipping boxes containing documents with all processes completed. </p>
+                        <p> Receiving and sending pouches with documents. </p>
+                        <p> Communicate with customers via email and phone. </p>
+                    </section>
                 </div>
                 <div id="education">
                     <h1>Education</h1>
@@ -66,8 +115,8 @@
                 <div id="skills">
                     <h1>Skills</h1>
                 </div>
-                <div id="awards">
-                    <h1>Awards</h1>
+                <div id="contact">
+                    <h1>Contact</h1>
                 </div>
 
             </div>
@@ -80,11 +129,7 @@
         <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
-            });
-            $(document).ready(function(){
                 $('.btn').sidenav();
-            });
-            $(document).ready(function(){
                 $('.tabs').tabs();
             });
         </script>
