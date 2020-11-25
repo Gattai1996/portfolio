@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <a href="#user"><img class="circle" src="images/bruno.jpg"></a>
+            <a href="#contato"><span>Contato</span></a>
+        </ul>
+        
+        <h1>Bruno <span style="color: #4DB2FF;">Gattai</span></h1>
+        <p>I'm a brazilian Unity developer with +400 hours game development experience.</p>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+    </body>
 </html>
