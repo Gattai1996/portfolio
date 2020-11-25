@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,39 +19,49 @@ body {
     color: #1976d2;
 }
 
-.tabs .tab a:hover, .tabs .tab a.active {
+.tabs .tab a:hover,
+.tabs .tab a.active {
     color: #1976d2;
 }
 
-.tabs .tab a:focus, .tabs .tab a:focus.active {
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
     background-color: rgba(178, 208, 246, 0.2);
 }
 
-.material-icons{
+.material-icons {
     display: inline-flex;
     vertical-align: top;
 }
 
+
 /* label focus color */
-.input-field input[type=text]:focus + label {
-    color:  #1976d2 !important;
+
+.input-field input[type=text]:focus+label {
+    color: #1976d2 !important;
 }
 
+
 /* label underline focus color */
+
 .input-field input[type=text]:focus {
-    border-bottom: 1px solid  #1976d2 !important;
-    box-shadow: 0 1px 0 0  #1976d2 !important;
+    border-bottom: 1px solid #1976d2 !important;
+    box-shadow: 0 1px 0 0 #1976d2 !important;
 }
+
 
 /* label focus color */
-.input-field input[type=email]:focus + label {
-    color:  #1976d2 !important;
+
+.input-field input[type=email]:focus+label {
+    color: #1976d2 !important;
 }
 
+
 /* label underline focus color */
+
 .input-field input[type=email]:focus {
-    border-bottom: 1px solid  #1976d2 !important;
-    box-shadow: 0 1px 0 0  #1976d2 !important;
+    border-bottom: 1px solid #1976d2 !important;
+    box-shadow: 0 1px 0 0 #1976d2 !important;
 }
 
 a {
@@ -73,7 +83,7 @@ span:hover {
 
 #img-profile {
     margin-bottom: 5vh;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
@@ -101,11 +111,18 @@ h5 {
     padding-bottom: 2vh;
 }
 
-#portfolio, #experience, #education, #skills, #contact {
+#portfolio,
+#experience,
+#education,
+#skills,
+#contact {
     padding-top: 5vh;
 }
 
-#portfolio, #education, #skills, #contact {
+#portfolio,
+#education,
+#skills,
+#contact {
     height: 100vh;
 }
 
@@ -113,23 +130,31 @@ h5 {
     padding-right: 3vh;
 }
 
+
 /* width */
+
 ::-webkit-scrollbar {
-width: 7px;
+    width: 7px;
 }
+
 
 /* Track */
+
 ::-webkit-scrollbar-track {
-background: #eceff1;
+    background: #eceff1;
 }
+
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-background: #1976d2;
-border-radius: 7px;
+    background: #1976d2;
+    border-radius: 7px;
 }
 
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-background: #175da3;
+    background: #175da3;
 }
