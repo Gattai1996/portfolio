@@ -27,6 +27,11 @@ body {
     background-color: rgba(178, 208, 246, 0.2);
 }
 
+.material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+
 a {
     text-align: center;
 }
@@ -60,6 +65,14 @@ span:hover {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+h6 {
+    font-weight: bold;
+}
+
+h5 {
+    color: #1976d2;
 }
 
 #about p {
