@@ -119,15 +119,12 @@ h5 {
     padding-top: 5vh;
 }
 
-#portfolio,
-#education,
-#skills,
-#contact {
-    height: 100vh;
-}
-
 #about ul li a {
     padding-right: 3vh;
+}
+
+#menu-button {
+    margin: 1rem;
 }
 
 
