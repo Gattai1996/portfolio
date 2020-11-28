@@ -16,6 +16,7 @@ body {
 }
 
 .tabs .tab a {
+    font-size: larger;
     color: #1976d2;
 }
 
@@ -32,6 +33,10 @@ body {
 .material-icons {
     display: inline-flex;
     vertical-align: top;
+}
+
+.input-field>label {
+    font-size: 1.6rem;
 }
 
 
@@ -62,6 +67,19 @@ body {
 .input-field input[type=email]:focus {
     border-bottom: 1px solid #1976d2 !important;
     box-shadow: 0 1px 0 0 #1976d2 !important;
+}
+
+.input-field textarea:focus+label {
+    color: #1976d2 !important;
+}
+
+.input-field textarea:focus {
+    border-bottom: 1px solid #1976d2 !important;
+    box-shadow: 0 1px 0 0 #1976d2 !important;
+}
+
+.btn-large i {
+    font-size: 2rem;
 }
 
 a {
@@ -154,4 +172,16 @@ h5 {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #175da3;
+}
+
+.flow-text {
+    font-size: 1.8rem;
+}
+
+.sidenav li>a {
+    font-size: 1.8rem;
+}
+
+.input-field {
+    margin-top: 1rem;
 }
