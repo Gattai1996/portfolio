@@ -1,241 +1,175 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Sergoe'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Sergoe", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-<head>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-</head>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-<body>
-    <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li>
-            <div class="user-view">
-                <div id="img-background" class="background">
-                    <img src="img/unity.jpg" alt="unity background image">
-                </div>
-                <a><img id="img-profile" class="circle" src="img/bruno.jpg"></a>
-            </div>
-            <a href="#about" class="flow-text waves-effect"><span>About</span></a>
-            <a href="#portfolio" class="flow-text waves-effect"><span>Portfolio</span></a>
-            <a href="#experience" class="flow-text waves-effect"><span>Experience</span></a>
-            <a href="#education" class="flow-text waves-effect"><span>Education</span></a>
-            <a href="#skills" class="flow-text waves-effect"><span>Skills</span></a>
-            <a href="#contact" class="flow-text waves-effect"><span>Contact</span></a>
-        </li>
-    </ul>
-    <a href="#" id="menu-button" data-target="slide-out" class="sidenav-trigger btn btn-large blue darken-2 hide-on-large-only"><i
-            class="material-icons">menu</i></a>
-    <div class="row container">
-        <div class="col s12 l10 offset-l3">
-            <div id="about">
-                <div id="texts">
-                    <h1>Bruno da Costa Gattai</h1>
-                    <p class="flow-text">I'm a Brazilian Unity3D developer with +600 hours game development experience.</p>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/bruno-gattai/" target="blank"><img src="img/linkedin.png" alt="linkedin icon"></a>
-                            <a href="https://github.com/Gattai1996" target="blank"><img src="img/github.png" alt=""></a>
-                            <a href="https://nebula-games-studio.itch.io/" target="blank"><img src="img/gamepad.png" alt=""></a>
-                            <a href="https://www.youtube.com/channel/UCNNm-Ro-WG7MlXF7DIh9LaQ" target="blank"><img src="img/youtube.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="portfolio">
-                <h1>Portfolio</h1>
-                <div class="row">
-                    <div class="col s12">
-                        <ul class="tabs">
-                            <li class="tab col s3"><a href="#2018">2018</a></li>
-                            <li class="tab col s3"><a href="#2019">2019</a></li>
-                            <li class="tab col s3"><a class="active" href="#2020">2020</a></li>
-                            <li class="tab col s3"><a href="#2021">2021</a></li>
-                        </ul>
-                    </div>
-                    <!-- 2018 -->
-                    <div id="2018" class="col s12 flow-text">2018 projects</div>
-                    <!-- 2019 -->
-                    <div id="2019" class="col s12 flow-text">2019 projects</div>
-                    <!-- 2020 -->
-                    <div id="2020" class="col s12 flow-text">2020 projects</div>
-                    <!-- 2021 -->
-                    <div id="2021" class="col s12 flow-text">2021 projects</div>
-                </div>
-            </div>
-            <div id="experience">
-                <h1>Experience</h1>
-                <ul class="collapsible">
-                    <li class="active flow-text">
-                        <!-- COMPUWISE -->
-                        <div class="collapsible-header">
-                            <h5>Compuwise Informatic</h2>
-                        </div>
-                        <div class="collapsible-body">
-                            <p> <strong> About: </strong> </p>
-                            <p> Position: Information Technology Intern </p>
-                            <p> Period of employment: Set. 2019 - Jul. 2020 </p>
-                            <p> Duration: 11 months </p>
-                            <p> Location: Cotia - SP, Brazil </p>
-                            <p> This job was my entry point in the technology area. I was hired to work 6 hours / day, but I did a lot of overtime and acquired a lot of knowledge in several areas. </p>
-                            <br>
-                            <p> <strong> Main activities: </strong> </p>
-                            <p> Assist and communicate with customers via phone, chat and email to resolve calls and problems. </p>
-                            <p> Database queries. </p>
-                            <p> Frontend development. </p>
-                        </div>
-                    </li>
-                    <li class="flow-text">
-                        <!-- J. SERRANO -->
-                        <div class="collapsible-header">
-                            <h5>Textile J. Serrano</h2>
-                        </div>
-                        <div class="collapsible-body">
-                            <p> <strong> About: </strong> </p>
-                            <p> Position: Loader </p>
-                            <p> Period of employment: May 2017 - Jun. 2018 </p>
-                            <p> Duration: 1 year 2 months </p>
-                            <p> Location: Vargem Grande Paulista - SP, Brazil </p>
-                            <p> Textile J. Serrano Ltda is a company that manufactures carpets, couch coverings and mattresses, bedspreads and other textile parts. </p>
-                            <br>
-                            <p> <strong> Main activities: </strong> </p>
-                            <p> Organize stock of raw materials, such as thread rolls used in machines. </p>
-                            <p> Receiving and sending pallets to other sectors. </p>
-                            <p> Logistics of textile parts for finishing. </p>
-                            <p> Labeling of parts and pallets. </p>
-                            <p> Assistance in sector activities, such as operating machinery, organization and cleaning.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="flow-text">
-                        <!-- NEW SPACE -->
-                        <div class="collapsible-header">
-                            <h5> New Space Group </h5>
-                        </div>
-                        <div class="collapsible-body">
-                            <p> <strong> About: </strong> </p>
-                            <p> Position: Operations assistant </p>
-                            <p> Period of employment: May 2015 - May 2017 </p>
-                            <p> Duration: 2 years 1 month </p>
-                            <p> Location: São Paulo - SP, Brazil </p>
-                            <p> The New Space Group provides services to other companies in several segments. </p>
-                            <br>
-                            <p> <strong> Main activities: </strong> </p>
-                            <p> Analyze, label, digitize and take care of the logistics of documents for periodic examinations of Bradesco bank employees. </p>
-                            <p> Complete documentation and Excel spreadsheets for shipping boxes containing documents with all processes completed. </p>
-                            <p> Receiving and sending pouches with documents. </p>
-                            <p> Communicate with customers via email and phone. </p>
-                        </div>
-                    </li>
-                    <li class="flow-text">
-                        <!-- ARCOS DOURADOS -->
-                        <div class="collapsible-header">
-                            <h5> Arcos Dourados Trade of Food </h5>
-                        </div>
-                        <div class="collapsible-body">
-                            <p> <strong> About: </strong> </p>
-                            <p> Restaurant attendant </p>
-                            <p> Period of employment: Jul. 2014 - Nov 2014 </p>
-                            <p> Duration: 5 months </p>
-                            <p> Location: Cotia - SP, Brazil </p>
-                            <p> Arcos Dourados Trade of Food is the group that controls McDonald's branches in Brazil.
-                            </p>
-                            <br>
-                            <p> <strong> Main activities: </strong> </p>
-                            <p> Activities in the kitchen, such as making snacks, preparing hamburgers on the plate and frying potatoes. </p>
-                            <p> Cleanliness of the restaurant. </p>
-                            <p> Customer service. </p>
-                        </div>
-                    </li>
-                    <li class="flow-text">
-                        <!-- AQUINEUZ -->
-                        <div class="collapsible-header">
-                            <h5> Aquineuz Supermarkets </h5>
-                        </div>
-                        <div class="collapsible-body">
-                            <p> <strong> About: </strong> </p>
-                            <p> Packer </p>
-                            <p> Period of employment: Dec. 2012 - Jun. 2013 </p>
-                            <p> Duration: 7 months </p>
-                            <p> Location: Cotia - SP, Brazil </p>
-                            <br>
-                            <p> <strong> Main activities: </strong> </p>
-                            <p> Package customer purchases. </p>
-                            <p> Replacing goods on the shelves. </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="education">
-                <h1>Education</h1>
-                <!-- FATEC -->
-                <h3> Technologist Digital Games </h3>
-                <p class="flow-text"> Fatec Carapicuíba </p>
-                <p class="flow-text"> Jul. 2018 - Jul. 2021 </p>
-                <br>
-                <p class="flow-text"> <strong> Subjects included: </strong> </p>
-                <ul class="flow-text">
-                    <li> C# </li>
-                    <li> Unity3D </li>
-                    <li> Game Design </li>
-                    <li> Animation </li>
-                    <li> Sound Design </li>
-                    <li> Storytelling/Script </li>
-                    <li> Python </li>
-                    <li> Java </li>
-                    <li> Software Architeture </li>
-                    <li> Scracth </li>
-                </ul>
-            </div>
-            <div id="skills">
-                <h1>Skills</h1>
-                <ul class="flow-text">
-                    <!-- SKILLS LIST -->
-                    <li><i class="material-icons">check</i> Gameplay Programming </li>
-                    <li><i class="material-icons">check</i> Unity3D Editor Scripting </li>
-                    <li><i class="material-icons">check</i> Git/Version Control </li>
-                    <li><i class="material-icons">check</i> Good Design Notions </li>
-                    <li><i class="material-icons">check</i> Sound Design </li>
-                    <li><i class="material-icons">check</i> Storytelling/Script </li>
-                    <li><i class="material-icons">check</i> Video Editing </li>
-                    <li><i class="material-icons">check</i> Adobe Photoshop </li>
-                    <li><i class="material-icons">check</i> Adobe Premiere Pro </li>
-                    <li><i class="material-icons">check</i> DaVinci Resolve </li>
-                </ul>
-            </div>
-            <div id="contact">
-                <h1>Contact</h1>
-                <form action="">
-                    <div class="input-field col s12">
-                        <input id="email" type="text">
-                        <label for="email">Your Name</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="email" type="email">
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea id="textarea" class="materialize-textarea" data-length="5000"></textarea>
-                        <label for="textarea">Your Message</label>
-                    </div>
-                    <button type="submit" class="btn btn-large blue darken-2">Send</button>
-                </form>
-            </div>
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="img/perfil.jpg" style="width:100%" alt="Avatar">
+          <h2 class="w3-text-grey w3-margin-left"><i class="fa fa-user-circle fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Bruno Gattai</h2>
         </div>
-    </div>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-            $('.btn').sidenav();
-            $('.tabs').tabs();
-            $('.collapsible').collapsible();
-            $('#textarea').characterCounter();
-        });
-    </script>
-</body>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Game Programmer and Designer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>São Paulo, Brazil</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>brunogattai1996@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>+55 (11) 9 4304 - 7242 (main phone)</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>+55 (11) 9 3475 - 9149 (phone for message)</p>
+          
+          <hr>
 
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b></p>
+          <p>Unity 3D</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:90%">90%</div>
+          </div>
+          <p>C#</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Game Design</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:60%">60%</div>
+          </div>
+          <p>Blender</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
+          </div>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Languages</b></p>
+          <p>Portuguese</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:100%">100%</div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
+          </div>
+          <br>
+          
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Other Skills</b></p>
+          <p>Java, Python, JavaScript, TypeScript, PHP, GIT, SQL, HTML5, CSS3, Angular, React, Material Design, Bootstrap, Illustrator, Premiere, DaVinci Resolve, Microsoft Office, Power BI, Construct 2/3, Game Maker Studio 2 and Scratch.</p>
+          <br>
+
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <!-- Portfolio -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Games Portfolio</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Code Dungeon</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 - <span class="w3-tag w3-indigo w3-round">Current</span></h6>
+          <p class="w3-text-grey">Code Dungeon is an 3D RPG and strategy on turns game, with a unique and challenger combat system. The project's goal is teach basic about logic without being a educational and boring game. The project still in development since 2020 and my team is going to defend the final paper from my college with it, after that we will be launching it commertially.</p>
+          <button class="w3-btn w3-indigo">More about</button>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Gem Quest</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Jul 2020</h6>
+          <p class="w3-text-grey">Gem Quest is an 3D FPS game where the main mechanic is based on acquiring powers from enemies already defeated. This project was awarded by an event from my college as one of the best semester work.</p>
+          <button class="w3-btn w3-indigo w3-margin-bottom">More about</button>
+          <button class="w3-btn w3-indigo w3-margin-bottom">Play it</button><br><br>
+        </div>
+      </div>
+      
+      <!-- Experience -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>IT Operations Analyst | Restoque S/A</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - <span class="w3-tag w3-indigo w3-round">Current</span></h6>
+          <p>Analysis and solution of problems, parameterization of systems, improvement of processes and workflows.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Intern | Compuwise Informatics</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Answering and communicating with customers via phone, chat and email to resolve calls and problems, database queries, frontend development in Angular, debug backend in C#, make advertising material, such as commercial videos and tutorials using Adobe Premiere, commercial presentations using Microsoft Sway and PowerPoint, banners using Adobe Photoshop, teach customers how to use the systems by remotely accessing the computer and communicating by phone with them, parameterization of systems for the internet.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Machine loader | Textile J. Serrano</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Jun 2018</h6>
+          <p>Organize stock of raw materials, such as rolls of thread used on machines, receiving and sending pallets to other sectors, logistics of textile parts for finishing, labeling of parts and pallets, assistance in sector activities, such as operating machinery, organization and cleaning.</p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Operations Assistant | New Space Group</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2015 - May 2017</h6>
+          <p>Analyze, label, digitize and take care of the logistics of documents of periodic exams of bank employees, complete documentation and Excel spreadsheets for shipping boxes containing documents with all completed processes, receive and send pouches with documents and communicate with customers via email and phone.</p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Restaurant attendant | McDonald's</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2014 - Nov 2014</h6>
+          <p>Activities in the kitchen, such as assembling snacks, preparing hamburgers on the plate and frying potatoes, cleanliness of the restaurant and customer services.</p><br>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="w3-container w3-card w3-white">
+        
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
+        
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Digital Games | Fatec Carapicuíba</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - <span class="w3-tag w3-indigo w3-round">2021</span></h6>
+          <p>Tecnology Degree.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Alura.com.br</b></h5>
+          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - <span class="w3-tag w3-indigo w3-round">Forever</span></h6>
+          <p>I have taken several courses on various subjects related to technology on that website.</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-indigo w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+</body>
 </html>
