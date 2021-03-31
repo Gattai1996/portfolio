@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Bruno Gattai Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Sergoe'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Sergoe", sans-serif
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        }
+
+        /* Then style the iframe to fit in the container div with full height and width */
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        div.sticky {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            text-align: center;
+        }
+
+        #buttonTop {
+            display: none;
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            z-index: 100;
+            cursor: pointer;
+        }
+    </style>
+</header>
+
+<body>
+
+    <div class="sticky">
+        <a href="index.html"><button class="w3-btn w3-indigo w3-round"><i class="fa fa-home"></i></button></a>
+    </div>
+
+    <div>
+        <button class="w3-btn w3-indigo w3-round" onclick="topFunction()" id="buttonTop"><i
+                class="fa fa-arrow-up"></i></button>
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1000px;">
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
+
+                <div class="w3-container">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Arkan Quest</h2>
+                    <h6 class="w3-text-indigo w3-padding-16"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul
+                        2019</h6>
+                    <p class="w3-text-grey">An Arkanoid-like game that I made in Construct 3 and art in Photoshop
+                        just for learning purposes. I met the classic Arkanoid game as a child and I always liked the
+                        mechanics
+                        of it. It is a challenging and relatively simple game to play. While on vacation I was learning
+                        Construct 3 and decided to make a game for mobile devices with him. I needed a simple game to
+                        implement, that would work on any mobile device, I also wanted to venture into the artistic
+                        world creating all the assets and, in addition, I wanted to have fun creating and testing this
+                        game. Making an Arkanoid clone was perfect for me to learn how to develop on Construct 3, create
+                        assets in Photoshop and test on my own phone (which was anything but potent). I added a personal
+                        touch to the game with black hole mechanics and the game was really fun to play.</p>
+
+                    <br>
+
+                    <h6 class="w3-text-indigo w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right"></i>What I
+                        Learned</h6>
+                    <p class="w3-text-grey">Developing this project I learned how to make games using Construct 3,
+                        assets with Photoshop, balancing and optimizing mechanics for games on mobile devices,
+                        progressing levels and increasing difficulty in game design.</p>
+                </div>
+
+                <div class="w3-container">
+                    <h6 class="w3-text-indigo w3-padding-16"><i
+                            class="fa fa-file-movie-o fa-fw w3-margin-right"></i>Gameplay video</h6>
+
+                    <div class="container w3-margin-top">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/shZInHnwBF0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <br>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="w3-container">
+                    <h6 class="w3-text-indigo w3-padding-16"><i
+                            class="fa fa-file-picture-o fa-fw w3-margin-right"></i>Screenshots</h6>
+
+                    <div class="w3-center">
+                        <img src="img/AK_Screenshot_1.png" alt="Screenshot 1" class="w3-img w3-margin"
+                            style="width: 270px; max-width: 100%;">
+                        <img src="img/AK_Screenshot_2.png" alt="Screenshot 2" class="w3-img w3-margin"
+                            style="width: 270px; max-width: 100%;">
+                        <img src="img/AK_Screenshot_3.png" alt="Screenshot 3" class="w3-img w3-margin"
+                            style="width: 270px; max-width: 100%;">
+                        <img src="img/AK_Screenshot_4.png" alt="Screenshot 4" class="w3-img w3-margin"
+                            style="width: 270px; max-width: 100%;">
+                        <img src="img/AK_Screenshot_5.png" alt="Screenshot 5" class="w3-img w3-margin"
+                            style="width: 270px; max-width: 100%;">
+                        <img src="img/AK_Screenshot_6.png" alt="Screenshot 6" class="w3-img w3-margin"
+                            style="width: 270px; max-width: 100%;">
+                        <br>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="w3-container">
+                    <h6 class="w3-text-indigo w3-padding-16"><i class="fa fa-paint-brush fa-fw w3-margin-right"></i>Art
+                        Showcase</h6>
+
+                    <div class="w3-center">
+                        <h5 class="w3-text-grey">Logo</h5>
+                        <img src="img/title.png" alt="arkan quest logo" class="w3-img" style="width: 200px; max-width: 100%;">
+                        <br>
+                        <br>
+                        <h5 class="w3-text-grey">Power Ups</h5>
+                        <img src="img/power-ups1.png" alt="ball" class="w3-img" style="width: 250px; max-width: 100%;">
+                        <img src="img/power-ups2.png" alt="ball" class="w3-img" style="width: 250px; max-width: 100%;">
+                        <br>
+                        <br>
+                        <h5 class="w3-text-grey">Entities</h5>
+                        <img src="img/bola.png" alt="ball" class="w3-img" style="width: 78px; max-width: 100%;">
+                        <img src="img/raquetex3.png" alt="ball" class="w3-img" style="width: 248px; max-width: 100%;">
+                        <img src="img/BlackHoleBlue.png" alt="ball" class="w3-img"
+                            style="width: 150px; max-width: 100%;">
+                        <img src="img/BlackHolePurple.png" alt="ball" class="w3-img"
+                            style="width: 150px; max-width: 100%;">
+                        <br>
+                        <br>
+                        <h5 class="w3-text-grey">Bricks</h5>
+                        <img src="img/blocos.png" alt="ball" class="w3-img" style="width: 500px; max-width: 100%;">
+                        <br>
+                        <br>
+                        <h5 class="w3-text-grey">User Interface</h5>
+                        <img src="img/starYellow.png" alt="ball" class="w3-img" style="width: 75px; max-width: 100%;">
+                        <img src="img/back.png" alt="ball" class="w3-img" style="width: 75px; max-width: 100%;">
+                        <img src="img/great_pause.png" alt="ball" class="w3-img" style="width: 75px; max-width: 100%;">
+                        <img src="img/play.png" alt="ball" class="w3-img" style="width: 75px; max-width: 100%;">
+                        <img src="img/pause.png" alt="ball" class="w3-img" style="width: 75px; max-width: 100%;">
+                        <img src="img/restart.png" alt="ball" class="w3-img w3-margin-bottom" style="width: 75px; max-width: 100%;">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            //Get the button:
+            mybutton = document.getElementById("buttonTop");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                }
+                else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+</body>
+
+</html>
