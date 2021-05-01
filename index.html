@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+
 <header>
   <title>Bruno Gattai Portfolio</title>
   <meta charset="UTF-8">
@@ -7,331 +9,195 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Sergoe'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-      font-family: "Sergoe", sans-serif
-    }
-
-    .buttonAnimated {
-      border: transparent 1px solid;
-      padding: 8px 16px;
-      border-radius: 5px;
-      font-weight: 600;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: all 0.5s;
-      color: #ffffff;
-      background: #3f51b5;
-    }
-
-    .buttonAnimated:hover {
-      border: #3f51b5 1px solid;
-      color: #3f51b5;
-      background: #ffffff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </header>
 
 <body class="w3-light-grey">
-
+  <!-- Button Top -->
+  <div>
+    <button class="w3-btn w3-indigo w3-round" onclick="topFunction()" id="buttonTop"><i
+        class="fa fa-arrow-up"></i></button>
+    <!-- End Button Top -->
+  </div>
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width:1200px;">
-
     <!-- The Grid -->
     <div class="w3-row-padding">
-
       <!-- Left Column -->
       <div class="w3-third">
-
         <!-- About me -->
-        <div class="w3-white w3-text-grey w3-card-4 w3-round w3-margin-bottom">
+        <div class="w3-container w3-card w3-white w3-round w3-margin-bottom" id="col1">
           <div class="w3-display-container">
-            <img src="img/perfil.jpg" class="w3-round" style="width:100%" alt="Avatar">
-            <h2 class="w3-text-grey w3-margin-left w3-xxlarge">Bruno Gattai</h2>
+            <h2 class="w3-text-grey w3-margin-left w3-xxxlarge">Bruno Gattai</h2>
           </div>
           <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Game Programmer and Designer
-            </p>
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Unity 3D Game Programmer</p>
             <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>São Paulo, Brazil</p>
             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>brunogattai1996@mail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>+55 (11) 9 4304 - 7242 (main)
-            </p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>+55 (11) 9 3475 - 9149 (message)
-            </p>
+            <p><i class="fa fa-whatsapp fa-fw w3-margin-right w3-large w3-text-indigo"></i>+55 11 94304-7242 (main)</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>+55 11 93475-9149 (message)</p>
             <a href="https://www.linkedin.com/in/bruno-gattai/" target="_blank">
               <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-indigo"></i>LinkedIn</p>
             </a>
             <a href="https://github.com/Gattai1996/" target="_blank">
-              <p><i class="fa fa-github fa-fw w3-margin-right w3-margin-bottom w3-large w3-text-indigo"></i>GitHub</p>
+              <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-indigo"></i>GitHub</p>
             </a>
+            <a href="doc/Curriculo Bruno da Costa Gattai.pdf" download="Resume" target="_blank"><button
+                class="buttonAnimated w3-margin-bottom">Resume</button></a>
           </div>
         </div>
-
-        <!-- Education -->
-        <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
-
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
-
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Digital Games | Fatec Carapicuíba</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - <span
-                class="w3-tag w3-indigo w3-round">2021</span></h6>
-            <p class="w3-text-grey">Faculty - Technologist</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Alura.com.br</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - <span
-                class="w3-tag w3-indigo w3-round">Forever</span></h6>
-            <p class="w3-text-grey">I have taken several courses on various subjects related to technology on that
-              website, such as
-              programming, games and web development, design, personal development and agile methodologies.</p><br>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="w3-white w3-text-grey w3-card-4 w3-round w3-margin-bottom">
-          <div class="w3-container">
-            <h2><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Skills</h2>
-            <h6>Unity 3D</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small w3-margin-bottom">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:90%">90%</div>
-            </div>
-            <h6>C#</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small w3-margin-bottom">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">
-                <div class="w3-center w3-text-white">80%</div>
-              </div>
-            </div>
-            <h6>Game Design</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small w3-margin-bottom">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:60%">60%</div>
-            </div>
-            <h6>Strorytelling</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small w3-margin-bottom">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
-            </div>
-            <h6>Adobe Photoshop</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small w3-margin-bottom">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
-            </div>
-            <h6>Blender</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small w3-margin-bottom">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:30%">30%</div>
-            </div>
-            <br>
-          </div>
-        </div>
-
-        <!-- Other Skills -->
-        <div class="w3-white w3-text-grey w3-card-4 w3-round w3-margin-bottom">
-          <div class="w3-container">
-            <h2><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Other Skills</h2>
-            <p class="w3-text-grey">Java, Python, JavaScript, TypeScript, PHP, GIT, SQL, HTML5, CSS3, Angular, React,
-              Material Design,
-              Bootstrap, Illustrator, Premiere, DaVinci Resolve, Microsoft Office, Power BI, Construct 2/3, Game
-              Maker
-              Studio 2 and Scratch.</p>
-            <br>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="w3-white w3-text-grey w3-card-4 w3-round w3-margin-bottom">
-          <div class="w3-container">
-            <h2><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Languages</h2>
-            <h6>Portuguese</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:100%">100%</div>
-            </div>
-            <h6>English</h6>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo w3-margin-bottom" style="width:70%">70%</div>
-            </div>
-            <br>
-          </div>
-        </div>
-
-        <!-- Hobbies -->
-        <div class="w3-white w3-text-grey w3-card-4 w3-round w3-margin-bottom">
-          <div class="w3-container">
-            <h2><i class="fa fa-television fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Hobbies</h2>
-            <p class="w3-text-grey">Studying programming, art and game design</p>
-            <p class="w3-text-grey">Develop games</p>
-            <p class="w3-text-grey">Watch videos on YouTube</p>
-            <p class="w3-text-grey">Play indie games</p>
-            <p class="w3-text-grey">Reading books</p>
-            <p class="w3-text-grey">Watch series and movies</p>
-            <p class="w3-text-grey">Talk to family and friends</p>
-            <p class="w3-text-grey">Share knowledge</p>
-            <p class="w3-text-grey w3-margin-bottom">Acquire knowledge</p>
-            <br>
-          </div>
-        </div>
-
         <!-- End Left Column -->
       </div>
-
       <!-- Right Column -->
       <div class="w3-twothird">
-
-        <!-- Games Portfolio -->
-
-        <!-- Code Dungeon -->
-        <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Games Portfolio</h2>
+        <!-- Games Showcase -->
+        <div class="w3-container w3-card w3-white w3-round w3-margin-bottom" id="col2">
+          <h2 class="w3-text-grey w3-margin w3-xxlarge">Games Showcase</h2>
+          <!-- All Games Video -->
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Code Dungeon</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 - <span
-                class="w3-tag w3-indigo w3-round">Current</span></h6>
-            <p class="w3-text-grey">Code Dungeon is an 3D RPG and strategy on turns game, with a unique and
-              challenger
-              combat system. The project's goal is teach basic about logic without being a educational and boring
-              game.
-              The project still in development since 2020 and my team is going to defend the final paper from my
-              college
-              with it, after that we will be launching it commertially.</p>
-            <a href="codedungeon.html"><button class="buttonAnimated">Know more</button></a>
-            <br><br>
-            <hr>
+            <div class="container w3-margin-bottom">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/wLXRlB7Ov7c"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <br>
+            <!-- End All Games Video  -->
           </div>
-
-          <!-- Gem Quest -->
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Gem Quest</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Jul 2020</h6>
-            <p class="w3-text-grey">Gem Quest is an 3D FPS game where the main mechanic is based on acquiring powers
-              from enemies already defeated. This project was awarded by an event from my college as one of the best
-              semester work and was published on the official page of this event.</p>
-            <a href="gemquest.html"><button class="buttonAnimated">Know more</button></a>
-            <br><br>
-            <hr>
-          </div>
-
-          <!-- Arkan Quest -->
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Arkan Quest</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019</h6>
-            <p class="w3-text-grey">An Arkanoid-like game that I made in Construct 3 and art in Photoshop just for
-              learning purposes.</p>
-            <a href="arkanquest.html"><button class="buttonAnimated w3-margin-bottom">Know more</button></a>
-            <br><br>
-          </div>
+          <!-- End Games Showcase -->
         </div>
-
-        <!-- Free Lancer Experience -->
+        <!-- End Right Column -->
+      </div>
+      <!-- Code Dungeon Showcase -->
+      <div class="w3-col">
         <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-handshake-o fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Free Lancer Portfolio
-          </h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Design Jobs</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - <span
-                class="w3-tag w3-indigo w3-round">Current</span></h6>
-            <p class="w3-text-grey">Design jobs here</p>
-            <a href="designs.html"><button class="buttonAnimated">Know more</button></a>
-            <hr>
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Code Dungeon</h2>
+            <p class="w3-text-grey">
+              Code Dungeon is an 3D RPG and strategy on turns game, with a unique and
+              challenger combat system. The project's goal is teach basic about logic
+              without being a educational and boring game. The project still in development
+              since 2020 and my team is going to defend the final paper from my college with it,
+              after that I will be launching it commertially.
+            </p>
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Video Tutorials</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
-            <p class="w3-text-grey">Video Tutorials</p>
-            <a href="videos.html"><button class="buttonAnimated">Know more</button></a>
-            <hr>
-          </div>
-          <div class="w3-container w3-margin-bottom">
-            <h5 class="w3-opacity"><b>Web Sites</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
-            <p class="w3-text-grey">Web Sites Here</p>
-            <a href="websites.html"><button class="buttonAnimated w3-margin-bottom">Know more</button></a>
+            <div class="container w3-margin-bottom">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/2nlCSDkj_eA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
             <br>
           </div>
         </div>
-
-        <!-- Work Experience -->
+        <!-- End Code Dungeon Showcase -->
+      </div>
+      <!-- Gem Quest Showcase -->
+      <div class="w3-col">
         <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>IT Operations Analyst | Restoque S/A</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - <span
-                class="w3-tag w3-indigo w3-round">Current</span></h6>
-            <p class="w3-text-grey">Analysis and solution of problems, parameterization of systems, improvement of
-              processes and
-              workflows.
-            </p>
-            <hr>
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Gem Quest</h2>
+            <p class="w3-text-grey">Gem Quest is an 3D FPS game where the main mechanic is based on acquiring
+              powers from enemies already defeated. This project was awarded by an event from my college as
+              one of the best semester work and was published on the official page of this event.</p>
+            <a href="https://sijoga.itch.io/gem-quest"><button class="w3-btn w3-indigo w3-round w3-margin-bottom">Play
+                it</button></a>
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Intern | Compuwise Informatics</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-            <p class="w3-text-grey">Answering and communicating with customers via phone, chat and email to resolve
-              calls and problems,
-              database queries, frontend development in Angular, debug backend in C#, make advertising material,
-              such as
-              commercial videos and tutorials using Adobe Premiere, commercial presentations using Microsoft Sway
-              and
-              PowerPoint, banners using Adobe Photoshop, teach customers how to use the systems by remotely
-              accessing
-              the computer and communicating by phone with them, parameterization of systems for the internet.</p>
-              <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Machine loader | Textile J. Serrano</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Jun 2018</h6>
-            <p class="w3-text-grey">Organize stock of raw materials, such as rolls of thread used on machines, receiving
-              and sending
-              pallets
-              to other sectors, logistics of textile parts for finishing, labeling of parts and pallets, assistance
-              in
-              sector activities, such as operating machinery, organization and cleaning.</p>
-              <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Operations Assistant | New Space Group</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2015 - May 2017</h6>
-            <p class="w3-text-grey">Analyze, label, digitize and take care of the logistics of documents of periodic
-              exams of bank
-              employees,
-              complete documentation and Excel spreadsheets for shipping boxes containing documents with all
-              completed
-              processes, receive and send pouches with documents and communicate with customers via email and phone.
-            </p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Restaurant attendant | McDonald's</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2014 - Nov 2014</h6>
-            <p class="w3-text-grey w3-margin-bottom">Activities in the kitchen, such as assembling snacks, preparing
-              hamburgers on the
-              plate and frying
-              potatoes, cleanliness of the restaurant and customer services.</p>
-              <br>
+            <div class="container w3-margin-bottom">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/QUvjw4FUb-4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <br>
           </div>
         </div>
-
-        <!-- End Right Column -->
+        <!-- End Gem Quest Showcase -->
       </div>
-
+      <!-- Astral Travel Showcase -->
+      <div class="w3-col">
+        <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
+          <div class="w3-container">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Astral Travel</h2>
+            <p class="w3-text-grey">An infinite 2.5D platform game. The goal is to reach as high as possible
+              without falling from the clouds or touching a nightmare cloud.</p>
+          </div>
+          <div class="w3-container">
+            <div class="container w3-margin-bottom">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/lMLwXQ9gR2A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <br>
+          </div>
+        </div>
+        <!-- End Astral Travel Showcase -->
+      </div>
+      <!-- Arkan Quest Showcase -->
+      <div class="w3-col">
+        <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
+          <div class="w3-container">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Arkan Quest</h2>
+            <p class="w3-text-grey">An Arkanoid-like game that I made in Construct 3 and art in Photoshop
+              just for learning purposes.</p>
+          </div>
+          <div class="w3-container">
+            <div class="container w3-margin-bottom">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/shZInHnwBF0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <br>
+          </div>
+        </div>
+        <!-- End Arkan Quest Showcase -->
+      </div>
       <!-- End Grid -->
     </div>
-
     <!-- End Page Container -->
   </div>
-
-  <footer class="w3-container w3-indigo w3-center w3-margin-top">
-    <p>Updated Mar - 2021</p>
+  <!-- Footer -->
+  <footer class="w3-container w3-indigo w3-margin-top w3-center">
+    <p>Updated April 2021</p>
   </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    if ($("#col1").height() < $("#col2").height()) {
+      $("#col1").height($("#col2").height());
+    }
+  </script>
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("buttonTop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      }
+      else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <!-- End Scripts -->
 </body>
 
 </html>
