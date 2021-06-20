@@ -159,45 +159,61 @@
           </div>
         </div>
         <!-- End Arkan Quest Showcase -->
+        <!-- Arkan Quest Showcase -->
+        <div class="w3-col">
+          <div class="w3-container w3-card w3-white w3-round w3-margin-bottom">
+            <div class="w3-container">
+              <h2 class="w3-text-grey w3-padding-16"><i
+                  class="fa fa-gamepad fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Slide Puzzle 3x3</h2>
+              <p class="w3-text-grey">A simple, nice and functional Sliding Numbers Puzzle 3x3 made in Unity. Totally responsive to run on browsers of any screen size.</p>
+            </div>
+            <div class="w3-container">
+              <div>
+                <iframe frameborder="0" src="https://itch.io/embed/1090644" width="208" height="167"><a href="https://nebula-games-studio.itch.io/slide-puzzle">Slide Puzzle 3x3 by Nebula Games</a></iframe>
+              </div>
+              <br>
+            </div>
+          </div>
+          <!-- End Arkan Quest Showcase -->
+        </div>
+        <!-- End Grid -->
       </div>
-      <!-- End Grid -->
+      <!-- End Page Container -->
     </div>
-    <!-- End Page Container -->
-  </div>
-  <!-- Footer -->
-  <footer class="w3-container w3-indigo w3-margin-top w3-center">
-    <p>Updated June 2021</p>
-  </footer>
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    if ($("#col1").height() < $("#col2").height()) {
-      $("#col1").height($("#col2").height());
-    }
-  </script>
-  <script>
-    //Get the button:
-    mybutton = document.getElementById("buttonTop");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+    <!-- Footer -->
+    <footer class="w3-container w3-indigo w3-margin-top w3-center">
+      <p>Updated June 2021</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      if ($("#col1").height() < $("#col2").height()) {
+        $("#col1").height($("#col2").height());
       }
-      else {
-        mybutton.style.display = "none";
-      }
-    }
+    </script>
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("buttonTop");
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-  </script>
-  <!-- End Scripts -->
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        }
+        else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+    <!-- End Scripts -->
 </body>
 
 </html>
